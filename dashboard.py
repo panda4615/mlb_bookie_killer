@@ -1,3 +1,6 @@
+import os
+
+ODDS_API_KEY = os.getenv("ODDS_API_KEY")
 import streamlit as st
 import pandas as pd
 import json
