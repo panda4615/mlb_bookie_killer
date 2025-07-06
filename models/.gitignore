@@ -1,0 +1,8 @@
+.env
+__pycache__/
+*.pyc
+*.pkl
+*.zip
+data/*.json
+data/*.parquet
+models/
