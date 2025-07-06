@@ -1,11 +1,14 @@
+import os
+
+ODDS_API_KEY = os.getenv("ODDS_API_KEY")
 # bot/alerts/telegram.py
 
 import requests
 import os
 
 # Securely fetch from environment, fallback to hardcoded for dev
-TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "7359752723:AAFcF8B233U66aMacYw-Gqs6t48nItE4SdA")
-TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "-4868580944")
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "xxxxxxxxxxxxxxxxxxx")
+TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "-xxxxxxxxxx")
 
 def send_telegram_message(message: str):
     """Send a plain text message to your Telegram group."""
